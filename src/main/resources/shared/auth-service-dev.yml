@@ -1,1 +1,9 @@
 
+eureka:
+  instance:
+    app: auth-service
+    hostName: localhost
+    vipAddress: auth-service
+    statusPageUrl: http://localhost:6799/info
+  host: localhost
+  port: 8884

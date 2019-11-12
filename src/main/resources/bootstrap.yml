@@ -3,8 +3,7 @@ server:
   port: 8898
 spring:
   profiles:
-    active:
-    - native
+    active: native
   cloud:
     config:
       server:
