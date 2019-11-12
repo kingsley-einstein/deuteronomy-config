@@ -18,11 +18,6 @@ pipeline {
         bat 'git commit -m "push build  ``  [Finishes #169699626]"'
       }
     }
-    stage("Push changes to branch") {
-      steps {
-        bat 'git push origin deployment'
-      }
-    }
     stage("Deploy") {
       steps {
         bat 'git push heroku master'
