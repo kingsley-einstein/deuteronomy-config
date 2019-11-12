@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://localhost:----
