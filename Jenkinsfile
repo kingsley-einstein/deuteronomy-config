@@ -17,7 +17,7 @@ pipeline {
     }
     stage("Push changes to branch") {
       steps {
-        bat 'git push origin HEAD'
+        bat 'git push origin ${GIT_BRANCH}'
       }
     }
     stage("Deploy") {
