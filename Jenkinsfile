@@ -1,6 +1,12 @@
 pipeline {
   agent any
   stages {
+    stage("Set git global credentials") {
+      steps {
+        bat 'git config --global user.email "javaprodigy56@gmail.com"'
+        bat 'git config --global user.name "Kingsley Victor"'
+      }
+    }
     stage("Pull changes") {
       steps {
         bat 'git pull origin deployment'
