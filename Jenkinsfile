@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Pull changes") {
       steps {
-        bat 'git pull origin ${GIT_BRANCH}'
+        bat 'git pull origin deployment'
       }
     }
     stage("Clean and package") {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage("Push changes to branch") {
       steps {
-        bat 'git push origin ${GIT_BRANCH}'
+        bat 'git push origin deployment'
       }
     }
     stage("Deploy") {
