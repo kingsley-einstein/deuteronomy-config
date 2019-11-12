@@ -12,12 +12,6 @@ pipeline {
         bat 'mvn clean package -DskipTests'
       }
     }
-    stage("Commit changes") {
-      steps {
-        bat 'git add .'
-        bat 'git commit -m "push build  ``  [Finishes #169699626]"'
-      }
-    }
     stage("Deploy") {
       steps {
         bat 'git push heroku master'
