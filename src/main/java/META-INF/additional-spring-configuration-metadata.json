@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "git.uri",
+  "type": "java.lang.String",
+  "description": "Uri to remote git repository"
+}]}

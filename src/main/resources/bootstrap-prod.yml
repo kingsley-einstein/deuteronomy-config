@@ -1,0 +1,11 @@
+
+server:
+  port: 8990
+git:
+  uri: ${REMOTE_GIT_URI}
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${git.uri}
