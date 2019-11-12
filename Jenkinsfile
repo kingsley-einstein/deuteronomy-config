@@ -7,11 +7,6 @@ pipeline {
         bat 'git config --global user.name "Kingsley Victor"'
       }
     }
-    stage("Pull changes") {
-      steps {
-        bat 'git pull origin deployment'
-      }
-    }
     stage("Clean and package") {
       steps {
         bat 'mvn clean package -DskipTests'
